@@ -1,0 +1,15 @@
+{
+  "name": "ejemplo-tp2",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Ejemplo base del TP2 de Programación III: catálogo con API usando Vite",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

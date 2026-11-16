@@ -1,0 +1,209 @@
+:root {
+  --color-principal: #1f4e9a;
+  --color-acento: #66c25a;
+  --color-texto: #1c1f26;
+  --color-fondo: #f4f6fa;
+  --color-tarjeta: #ffffff;
+  --sombra: 0 4px 14px rgb(0 0 0 / 8%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--color-texto);
+  background: var(--color-fondo);
+  line-height: 1.5;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  background: var(--color-tarjeta);
+  box-shadow: var(--sombra);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--color-principal);
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: var(--color-principal);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover {
+  color: var(--color-acento);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+.hero {
+  padding: 48px 24px;
+  margin-bottom: 32px;
+  text-align: center;
+  background: var(--color-tarjeta);
+  border-radius: 16px;
+  box-shadow: var(--sombra);
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  color: var(--color-principal);
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: var(--color-principal);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.boton:hover {
+  background: var(--color-acento);
+  transform: translateY(-2px);
+}
+
+.descripcion {
+  background: var(--color-tarjeta);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+}
+
+.controles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 24px 0 8px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1 1 240px;
+}
+
+.campo label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.campo input,
+.campo select {
+  padding: 10px 12px;
+  border: 1px solid #c9d1de;
+  border-radius: 8px;
+  font: inherit;
+  background: #fff;
+}
+
+.campo input:focus,
+.campo select:focus {
+  outline: 2px solid var(--color-principal);
+  outline-offset: 1px;
+}
+
+.estado {
+  min-height: 1.5em;
+  margin: 8px 0 16px;
+  color: #5a6474;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta {
+  background: var(--color-tarjeta);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: var(--sombra);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgb(0 0 0 / 14%);
+}
+
+.tarjeta img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tarjeta h2 {
+  margin: 12px 0 4px;
+  font-size: 1.05rem;
+  color: var(--color-principal);
+}
+
+.tarjeta p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #5a6474;
+}
+
+.pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 20px 24px;
+  background: var(--color-principal);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.pie a {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .encabezado {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .hero {
+    padding: 32px 16px;
+  }
+
+  .grilla {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .pie {
+    flex-direction: column;
+  }
+}

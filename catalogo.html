@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo — Ejemplo TP2</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <span class="logo">Rick & Morty</span>
+      <nav class="menu" aria-label="Navegación principal">
+        <a href="./index.html">Inicio</a>
+        <a href="./catalogo.html">Catálogo</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Catálogo de personajes</h1>
+
+      <form class="controles" onsubmit="return false">
+        <div class="campo">
+          <label for="buscador">Buscar por nombre</label>
+          <input
+            type="search"
+            id="buscador"
+            placeholder="Ej.: Rick"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="campo">
+          <label for="especie">Filtrar por especie</label>
+          <select id="especie">
+            <option value="todas">Todas</option>
+          </select>
+        </div>
+      </form>
+
+      <p id="estado" class="estado" role="status"></p>
+
+      <section id="grilla" class="grilla" aria-label="Personajes"></section>
+    </main>
+
+    <footer class="pie">
+      <p>Programación III · <span id="anio">2026</span></p>
+      <p>Datos: <a href="https://rickandmortyapi.com/">Rick and Morty API</a></p>
+    </footer>
+
+    <script type="module" src="./src/catalogo.js"></script>
+  </body>
+</html>
