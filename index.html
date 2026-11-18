@@ -3,44 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rick & Morty — Ejemplo TP2</title>
+    <title>SimpsonTV-Series</title>
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
-    <header class="encabezado">
-      <span class="logo">Rick & Morty</span>
-      <nav class="menu" aria-label="Navegación principal">
-        <a href="./index.html">Inicio</a>
-        <a href="./catalogo.html">Catálogo</a>
+  
+
+    <header class="encabezado-fijo">
+      <div class="tv-marca"> SimpsonTV </div>
+      <nav class="tv-botones-top" aria-label="Navegación principal">
+        <a href="./index.html" class="tv-btn-control">Inicio</a>
+        <a href="./catalogo.html" class="tv-btn-control">Catálogo</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
-        <h1>Personajes de Rick & Morty</h1>
+        <h1>D'OH!, Las mejores series en un solo lugar</h1>
         <p>
-          Un catálogo que consume una API pública con JavaScript: tarjetas,
-          búsqueda y filtro por especie.
+          Ponte comodo en el sillon, agarra una rosquilla y explora
+          nuestro catalogo televisivo: posters, informacion, busqueda y filtro por genero.
         </p>
-        <a class="boton" href="./catalogo.html">Ver el catálogo</a>
+        <a class="boton" href="./catalogo.html">Explorar catalogo</a>
       </section>
 
       <section class="descripcion">
-        <h2>Sobre el proyecto</h2>
+    <h2>Sobre el proyecto</h2>
         <p>
-          Este es un ejemplo base del Trabajo Práctico N.º 2. Muestra cómo
-          armar dos páginas con Vite, consumir datos con <code>fetch</code> y
-          generar las tarjetas desde JavaScript. La búsqueda y el filtro son
-          opcionales en el TP, pero acá están para que sirvan de referencia.
+          Inspirado en la clasica televisión de Los Simpsons y la epoca dorada de
+          las tardes frente a la tele, este catalogo web consume datos 
+          mediante JavaScript y la API publica de TVMaze. Podras recorrer la
+          grilla de programas, buscar tus favoritos por nombre o filtrarlos
+          segun su genero. 
         </p>
       </section>
     </main>
 
-    <footer class="pie">
-      <p>Programación III · <span id="anio">2026</span></p>
-      <p>Datos: <a href="https://rickandmortyapi.com/">Rick and Morty API</a></p>
+     <footer class="pie">
+      <p>SimpsonsTV · <span id="anio">2026</span></p>
+      <p>Datos: <a href="https://www.tvmaze.com/api">TVMaze API</a></p>
     </footer>
-
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Catálogo — Ejemplo TP2</title>
+    <title>SimpsonTV-Series</title>
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
-    <header class="encabezado">
-      <span class="logo">Rick & Morty</span>
-      <nav class="menu" aria-label="Navegación principal">
-        <a href="./index.html">Inicio</a>
-        <a href="./catalogo.html">Catálogo</a>
+    <header class="encabezado-fijo">
+      <div class="tv-marca">SimpsonTV</div>
+      <nav class="tv-botones-top" aria-label="Navegación principal">
+        <a href="./index.html" class="tv-btn-control">Inicio</a>
+        <a href="./catalogo.html" class="tv-btn-control">Catálogo</a>
       </nav>
     </header>
 
     <main>
-      <h1>Catálogo de personajes</h1>
+      <h1>Catalogo de Series por ver</h1>
 
       <form class="controles" onsubmit="return false">
         <div class="campo">
@@ -24,14 +24,14 @@
           <input
             type="search"
             id="buscador"
-            placeholder="Ej.: Rick"
+            placeholder="In English, please"
             autocomplete="off"
           />
         </div>
 
-        <div class="campo">
-          <label for="especie">Filtrar por especie</label>
-          <select id="especie">
+       <div class="campo">
+          <label for="genero">Filtrar por genero</label>
+          <select id="genero">
             <option value="todas">Todas</option>
           </select>
         </div>
@@ -39,12 +39,12 @@
 
       <p id="estado" class="estado" role="status"></p>
 
-      <section id="grilla" class="grilla" aria-label="Personajes"></section>
+      <section id="grilla" class="grilla" aria-label="Series"></section>
     </main>
 
     <footer class="pie">
-      <p>Programación III · <span id="anio">2026</span></p>
-      <p>Datos: <a href="https://rickandmortyapi.com/">Rick and Morty API</a></p>
+      <p>SimpsonsTV · <span id="anio">2026</span></p>
+      <p>Datos: <a href="https://www.tvmaze.com/api">TVMaze API</a></p>
     </footer>
 
     <script type="module" src="./src/catalogo.js"></script>
