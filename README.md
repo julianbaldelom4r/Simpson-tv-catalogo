@@ -12,7 +12,9 @@ pública.
 
 Tema elegido: **catálogo de series de televisión** (con estética inspirada en Los Simpsons).
 
-API: <https://api.tvmaze.com/shows> (pública, sin clave y con CORS).
+-pública, sin clave y con CORS
+API: <https://api.tvmaze.com> (url documentacion de la API).
+API: <https://api.tvmaze.com/shows> (url de catalago de series de la API).
 
 
 
@@ -154,5 +156,4 @@ raíz del dominio como en un subdirectorio (por ejemplo, GitHub Pages).
 
 - Cada serie devuelve `image` como un objeto con dos tamaños (`medium` y `original`), por lo que se extrae `serie.image.medium` para las tarjetas, validando antes que no sea `null` para evitar errores.
  
--sin opciones escritas a mano.
 
